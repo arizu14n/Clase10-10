@@ -1,0 +1,41 @@
+*{
+    font-weight: 400px;
+
+}
+.padre{
+    background-color: aqua;
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-rows: repeat(2,250px);
+    gap: 10px;
+    grid-template-areas: "elem1" "elem2" "elem3" "elem4";
+    align-items: center;
+}
+.hijo{
+    background-color: rosybrown;
+    border: 2px solid rgb(0, 0, 0) ;
+    width:  200px;
+    height: 200px;
+
+}
+.elem1 {
+    background-color: yellow;
+    grid-area: elem1;
+    
+    
+}
+.alinear {
+    display: flex;
+    /*flex-direction: column;*/
+    align-items: center;
+  
+}
+.elem2 {
+grid-area: elem2;
+}
+.elem3 {
+    grid-area: elem3;
+}
+.elem4{
+    grid-area: elem4;
+}
